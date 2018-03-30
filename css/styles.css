@@ -1,0 +1,114 @@
+body {
+  padding-top: 3.5rem;
+}
+
+#logo {
+    height: 20px;
+}
+
+.navbar-brand {
+    font-family: "Monotype Corsiva", Calibri;
+    font-size: 1.8rem;
+}
+
+.jumbotron-fluid {
+    height: 70vh; 
+    position: relative;
+    background: url(../pics/1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid purple;
+    height: 100%;
+    width: auto;
+}
+
+#draw {
+    z-index: 10;
+}
+
+.off-special {
+    margin-right: 16.666667%;
+}
+
+.rainbow {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+a#saveMe {
+    color: #fff;
+}
+
+#brushSize {
+    width: 35px;
+}
+
+#size {
+   width: 90px; 
+}
+
+.rowHeight {
+    min-height: 60px;
+}
+
+.activated {
+    background-color: #28a745!important;
+    border-color: #28a745!important;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    label#b_size {
+        display: block;
+        text-align: center!important;
+    }
+}
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+    p.default {
+        text-align: center;
+    }
+    
+    #no_margin {
+        margin-right: 0;
+    }
+    
+    .container div.col-md-4.border-right {
+        border-right: none!important;
+        border-bottom: 1px solid #dee2e6;
+    }
+    
+    div .col-md-8.text-right, div .col-md-12.text-right {
+        text-align: center!important;
+    }
+}
+
+@media all and (max-width: 575px) {
+    label {
+       display: block; 
+    }
+    
+    .container {
+       text-align: center!important; 
+    }
+    
+    .container div.col-md-4.border-right {
+        border-right: none!important;
+    }
+    
+    #b_color, #bg_color, #b_size{
+        text-align: center!important;
+    }
+    
+    #no_margin {
+        margin-right: 0;
+    }
+}

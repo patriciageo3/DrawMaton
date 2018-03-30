@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Draw some Magic on the canvas!">
+        <meta name="author" content="Patricia Georgescu">
+        <link rel="icon" href="./pics/favicon.ico">
+        <title>DrawMaton</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="DrawMaton.html"><img id="logo" class="pr-1 align-baseline" src="pics/logo.png" title="Logo" alt="Logo">DrawMaton</a>
+                <span class="ml-auto text-light"> Let`s have some fun! </span> 
+            <div>
+        </nav>
+
+        <main role="main">
+            <div class="jumbotron-fluid pb-0 pt-0 mb-3">
+                <canvas id="draw" width="10" height="10"><p>Your browser doesn't support canvas! Please upgrade your browser!</p></canvas>
+                <canvas id="bgDraw" width="10" height="10"></canvas>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4 border-right mb-1">
+                        <div class="row justify-content-end rowHeight">
+                            <div class="col-md-8  text-right col-sm-8"> <label for="brushColor" id="b_color" >Brush color: </label></div>
+                            <div class="col-md-4 col-sm-4"> <input type="color" id="brushColor" name="brushColor" value="#dddddd"> </div>
+                            <div class="w-100"> </div>
+                            <div class="col-md-4"> <p class="default"> <span class="rainbow">Default</span> </p> </div>  
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 border-right">
+                        <div class="row justify-content-end rowHeight">
+                            <div class="col-md-8  text-right col-sm-8"> <label for="bgColor" id="bg_color"> Background color: </label> </div>
+                            <div class="col-md-4 col-sm-4"> <input type="color" id="bgColor" name="bgColor" value="#ffffff"> </div>
+                            <div class="w-100"> </div>
+                            <div class="col-md-4 col-12"> <p class="default"> Default  </p> </div>  
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="row justify-content-end rowHeight">
+                        
+                            <div class="col-lg-5  text-right col-md-12 col-sm-8"> <label for="size" id="b_size">Brush size: </label></div>
+                            <div class="col-lg-5 col-md-6 col-sm-3"> <form><input for="line_width" name="rangeInput" oninput="line_width.value=rangeInput.value" type="range" id="size" min="1" max="100"> </div>
+                            <div class="col-lg-2 col-md-6 col-sm-1"> <input for="rangeInput" name="line_width" oninput="rangeInput.value=line_width.value" type="text" id="brushSize"> </form></div> 
+                            <div class="w-100"> </div>
+                            <div class="col-md-5  off-special text-center col-sm-12" id="no_margin"> <p class="default"> Defaaault </p> </div> 
+                       
+                        </div>
+                    </div>    
+                    
+                </div>
+            </div> <!-- /container -->
+            
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-auto text-center mb-2 col-sm-6"> <button type="button" class="btn btn-info" id="eraseMe">Eraser </button></div>
+                    <div class="col-md-auto text-center mb-2 col-sm-6"> <button type="button" class="btn btn-info activated" id="brush">Brush </button></div>
+                    <div class="col-md-auto text-center mb-2 col-sm-6"> <button type="button" class="btn btn-info" id="clearMe">Clear Canvas</button></div>
+                    <div class="col-md-auto text-center mb-2 col-sm-6"> <a class="btn btn-info" id="saveMe">Download</a></div> 
+                </div>
+            </div> <!-- /container no. 2 -->
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="js/vendor/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
