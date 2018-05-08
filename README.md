@@ -12,6 +12,10 @@ This app was created using:
 * JavaScript
 * Bootstrap
 
+## Live Demo
+
+To see the live demo, please [click here](https://patriciageo3.github.io/DrawMaton/).
+
 ## Functionality
 
 Drawing is made enjoyable through:
